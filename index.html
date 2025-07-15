@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartCommute</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🌍 SmartCommute</h1>
+    <p>Your Smart Travel Assistant</p>
+  </header>
+  <div id="search-container">
+    <input type="text" id="city-input" placeholder="Enter a city name..." />
+    <button onclick="searchCity()">Search</button>
+  </div>
+  <main>
+    <section id="location">
+      <h2>📍 Your Location</h2>
+      <p id="location-info">Detecting location...</p>
+    </section>
+
+    <section id="weather">
+      <h2>🌦️ Current Weather</h2>
+      <p id="weather-info">Loading weather data...</p>
+    </section>
+
+    <section id="network">
+      <h2>📶 Network Status</h2>
+      <p id="network-info">Checking network...</p>
+    </section>
+
+    <section id="alerts">
+      <h2>🔔 Alerts</h2>
+      <p id="alert-info">No new alerts yet.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Ajit | TAP Assignment 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
