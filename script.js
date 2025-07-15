@@ -54,12 +54,17 @@ if ('connection' in navigator) {
 
 // ✅ Simulated Background Weather Alerts
 function showWeatherNotification() {
+  alert("✅ You clicked the test button.");
+
   if (Notification.permission === "granted" && latestWeather !== "") {
-    new Notification("🌤️ SmartCommute Update", {
-      body: `Current Weather: ${latestWeather}`,
+    new Notification("🌤️ SmartCommute Alert", {
+      body: `Weather now: ${latestWeather}`,
       icon: "https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
     });
+
     alertInfo.textContent = `🔔 Last Alert at: ${new Date().toLocaleTimeString()}`;
+  } else {
+    alert("❌ Notifications are not allowed or weather not ready.");
   }
 }
 
